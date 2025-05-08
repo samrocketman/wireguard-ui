@@ -58,6 +58,7 @@
   }
   /* disabled forms */
   .form-control:disabled, .form-control[readonly] {
+    background-color: #bfbfbf;
     color: #000000;
   }
   /*
@@ -71,11 +72,19 @@
   .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #007bff;
   }
-  html body.login-page div.login-box div.login-logo a {
+  .login-logo a, .register-logo a {
     color: #dc3545;
   }
   /* subnet range dropdown */
-  body.sidebar-mini.modal-open span.select2-container.select2-container--default.select2-container--open span.select2-dropdown.select2-dropdown--below span.select2-results ul#select2-subnet_ranges-results.select2-results__options li#select2-subnet_ranges-result-5jm4-DMZ Network.select2-results__option {
+  .select2-results__option, .select2-search__field, .select2-container--default .select2-selection--single, .select2-container--default .select2-selection--single .select2-selection__rendered {
+    /*
+    background-color: #bfbfbf;
     color: #000000;
+    */
+    background-color: #495057;
+    color: #ffffff;
+  }
+  .navbar-light .btn-navbar, .navbar-light .form-control-navbar {
+    background-color: #bfbfbf;
   }
 }
