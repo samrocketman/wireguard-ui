@@ -84,7 +84,12 @@
     background-color: #495057;
     color: #ffffff;
   }
+  /* search bar at the top of the page */
   .navbar-light .btn-navbar, .navbar-light .form-control-navbar {
     background-color: #bfbfbf;
+  }
+  /* active connections */
+  .table-success {
+    background-color: #000000;
   }
 }
