@@ -92,4 +92,11 @@
   .table-success {
     color: #000000;
   }
+  /* Customize Server Interface Addresses */
+  div.tagsinput input:focus {
+      color: #bfbfbf !important;
+  }
+  div.tagsinput input {
+      color: #cde69c !important;
+  }
 }
