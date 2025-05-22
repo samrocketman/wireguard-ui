@@ -2,6 +2,7 @@ package router
 
 import (
 	"errors"
+	"html"
 	"io"
 	"io/fs"
 	"reflect"
@@ -115,7 +116,7 @@ func New(tmplDir fs.FS, extraData map[string]interface{}, secret [64]byte) *echo
 	//"htmlescaper": template.htmlEscaper,
 	funcs := template.FuncMap{
 		"StringsJoin": strings.Join,
-		"attrescaper": util.EscapeHtmlCode,
+		"attrescaper": html.EscapeString,
 	}
 	templates := make(map[string]*template.Template)
 	templates["login.html"] = template.Must(template.New("login").Funcs(funcs).Parse(tmplLoginString))
